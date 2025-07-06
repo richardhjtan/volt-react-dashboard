@@ -22,6 +22,9 @@
 // Change variables here
 @import "volt/variables";
 
+// Font Awesome
+@import '../assets/styles/font-awesome/css/all.css';
+
 // Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
@@ -38,6 +41,7 @@
 
 // Layout
 @import "volt/layout";
+
 
 // Components
 @import "volt/components";

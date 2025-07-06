@@ -20,10 +20,14 @@
 // Remove borders and border-radius to keep accordion items edge-to-edge.
 
 .accordion-flush {
+    .accordion-item {
+        background-color: transparent !important;
+    }   
+    
     .accordion-button {
         background-color: transparent;
         &:not(.collapsed) {
-            color: $secondary;
+            box-shadow: none;
         }
         &:focus {
             border-color: $gray-300;

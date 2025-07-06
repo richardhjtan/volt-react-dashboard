@@ -1,10 +1,10 @@
 
 import React, { useState } from "react";
-import moment from "moment-timezone";
+import dayjs from "dayjs";
 import Datetime from "react-datetime";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
-import { Col, Row, Card, Form, Button, InputGroup } from '@themesberg/react-bootstrap';
+import { Col, Row, Card, Form, Button, InputGroup } from 'react-bootstrap';
 
 
 export const GeneralInfoForm = () => {
@@ -42,7 +42,7 @@ export const GeneralInfoForm = () => {
                       <Form.Control
                         required
                         type="text"
-                        value={birthday ? moment(birthday).format("MM/DD/YYYY") : ""}
+                        value={birthday ? dayjs(birthday).format("MM/DD/YYYY") : ""}
                         placeholder="mm/dd/yyyy"
                         onFocus={openCalendar}
                         onChange={() => { }} />

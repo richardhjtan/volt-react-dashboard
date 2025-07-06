@@ -1,3 +1,17 @@
+# Volt React Dashboard (React 18 Fork)
+
+This is a fork of [Volt React Dashboard Bootstrap 5](https://github.com/themesberg/volt-react-dashboard) by Themesberg, updated to support React 18.
+
+## Differences from the original
+
+- Upgraded to React 18 and React Router v7
+- Replaced Moment.js with Day.js
+- Rebuilt Chartist integration using pure React
+- Updated to Font Awesome v6
+- Uses latest React Bootstrap while preserving original styling
+- All dependencies updated to latest versions
+
+
 # [Volt React Dashboard Bootstrap 5](https://demo.themesberg.com/volt-react-dashboard) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2Fthemesberg%2Fvolt-react-dashboard&via=themesberg&text=Check%20out%20this%20open%20source%20React%20Dashboard)
 
 [![version](https://img.shields.io/npm/v/@themesberg/volt-react-dashboard)](https://www.npmjs.com/package/@themesberg/volt-react-dashboard)

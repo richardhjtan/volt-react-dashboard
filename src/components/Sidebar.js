@@ -1,12 +1,12 @@
 
 import React, { useState } from "react";
 import SimpleBar from 'simplebar-react';
-import { useLocation } from "react-router-dom";
+import { useLocation } from "react-router";
 import { CSSTransition } from 'react-transition-group';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBook, faBoxOpen, faChartPie, faCog, faFileAlt, faHandHoldingUsd, faSignOutAlt, faTable, faTimes, faCalendarAlt, faMapPin, faInbox, faRocket } from "@fortawesome/free-solid-svg-icons";
-import { Nav, Badge, Image, Button, Dropdown, Accordion, Navbar } from '@themesberg/react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Nav, Badge, Image, Button, Dropdown, Accordion, Navbar } from 'react-bootstrap';
+import { Link } from 'react-router';
 
 import { Routes } from "../routes";
 import ThemesbergLogo from "../assets/img/themesberg.svg";
@@ -26,7 +26,7 @@ export default (props = {}) => {
     const defaultKey = pathname.indexOf(eventKey) !== -1 ? eventKey : "";
 
     return (
-      <Accordion as={Nav.Item} defaultActiveKey={defaultKey}>
+      <Accordion className="accordion-flush" as={Nav.Item} defaultActiveKey={defaultKey}>
         <Accordion.Item eventKey={eventKey}>
           <Accordion.Button as={Nav.Link} className="d-flex justify-content-between align-items-center">
             <span>
